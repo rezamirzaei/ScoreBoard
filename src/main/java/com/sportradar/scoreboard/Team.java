@@ -108,8 +108,6 @@ public class Team {
         this.liveScore =this.score+ score;
     }
 
-
-
     public String toString() { //to show team, its live score and live goals
         return this.getName() + " " + this.getLiveScore()+ " " + this.getLiveGoals() ;
     }
