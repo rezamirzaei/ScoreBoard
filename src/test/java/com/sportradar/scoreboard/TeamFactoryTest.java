@@ -13,4 +13,12 @@ public class TeamFactoryTest {
         String name = parts[0];
         assertEquals("Norway", name);
     }
+    @Test
+    public void existTeamTest() {
+        boolean norwayTeamExist = TeamFactory.teamExists("Norway");
+        assertEquals(false, norwayTeamExist);
+        Team team =TeamFactory.getOrCreateTeam("Norway");
+        norwayTeamExist = TeamFactory.teamExists("Norway");
+        assertEquals(true, norwayTeamExist);
+    }
 }

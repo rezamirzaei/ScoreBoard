@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="Rename goalsAway varaible in Team class to AwayGoals">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/TeamFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/TeamFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="TeamFactory class and test added">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/TeamFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/TeamFactoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +56,7 @@
     "JUnit.GameTest.liveGoalTest.executor": "Run",
     "JUnit.GameTest.scoreTest.executor": "Run",
     "JUnit.TeamFactoryTest.CreateTeamTest.executor": "Run",
+    "JUnit.TeamFactoryTest.existTeamTest.executor": "Run",
     "JUnit.TeamTest.TeamAddGoals.executor": "Run",
     "JUnit.TeamTest.TeamAddScore.executor": "Run",
     "JUnit.TeamTest.TeamSummary.executor": "Run",
@@ -76,7 +75,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TeamFactoryTest.CreateTeamTest">
+  <component name="RunManager" selected="JUnit.TeamFactoryTest.existTeamTest">
     <configuration name="FootballGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scoreboard-app" />
       <extension name="coverage">
@@ -88,22 +87,6 @@
       <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
       <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.FootballGameTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameTest.liveGoalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="scoreboard-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
-      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.GameTest" />
-      <option name="METHOD_NAME" value="liveGoalTest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -140,6 +123,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TeamFactoryTest.existTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scoreboard-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.TeamFactoryTest" />
+      <option name="METHOD_NAME" value="existTeamTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scoreboard-app" />
       <extension name="coverage">
@@ -170,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeamFactoryTest.existTeamTest" />
         <item itemvalue="JUnit.TeamFactoryTest.CreateTeamTest" />
         <item itemvalue="JUnit.TeamTest" />
         <item itemvalue="JUnit.FootballGameTest" />
         <item itemvalue="JUnit.GameTest.scoreTest" />
-        <item itemvalue="JUnit.GameTest.liveGoalTest" />
       </list>
     </recent_temporary>
   </component>
@@ -196,7 +195,7 @@
       <updated>1722341154043</updated>
       <workItem from="1722341155368" duration="2460000" />
       <workItem from="1722344798020" duration="1100000" />
-      <workItem from="1722346419322" duration="16563000" />
+      <workItem from="1722346419322" duration="17028000" />
     </task>
     <task id="LOCAL-00001" summary="Team class added">
       <option name="closed" value="true" />
@@ -278,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722365115149</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="TeamFactory class and test added">
+      <option name="closed" value="true" />
+      <created>1722367134992</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1722367134992</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +317,8 @@
     <MESSAGE value="Live goal test for teams, function is also added in Game" />
     <MESSAGE value="Add Game interface, add some functions in FootballGame including getWinner and FinishGame and test this features" />
     <MESSAGE value="Rename goalsAway varaible in Team class to AwayGoals" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rename goalsAway varaible in Team class to AwayGoals" />
+    <MESSAGE value="TeamFactory class and test added" />
+    <option name="LAST_COMMIT_MESSAGE" value="TeamFactory class and test added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
