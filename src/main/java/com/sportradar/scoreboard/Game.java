@@ -66,6 +66,7 @@ public class Game {
         isFinished = finished;
     }
 
+    @Override
     public String toString() {
         return homeTeam.getName() + " " + homeGoals + " - " + awayTeam.getName() + " " + awayGoals;
     }

@@ -9,21 +9,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TeamTest {
     @Test
-    public void TeamCreation() {
+    public void TeamCreationTest() {
         Team team= new Team("Norway");
 
         assertEquals("Norway", team.getName());
     }
 
     @Test
-    public void TeamSummary() {
+    public void teamSummaryTest() {
         Team team= new Team("Norway");
 
         assertEquals("Norway 0 0", team.toString());
     }
 
     @Test
-    public void TeamAddGoals() {
+    public void teamAddGoalsTest() {
         Team team= new Team("Norway");
         team.addGoals(1);
         String summary=team.toString();
@@ -32,7 +32,7 @@ public class TeamTest {
         assertEquals("1", LiveGoals);
     }
     @Test
-    public void TeamAddScore() {
+    public void teamAddScoreTest() {
         Team team= new Team("Norway");
         team.addScore(3);
         String summary=team.toString();

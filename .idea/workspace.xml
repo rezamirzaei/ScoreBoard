@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="Team new features to be used in ranking and new tests for team creation and update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/Game.java" afterDir="false" />
+    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="Game class added">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/GameTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/TeamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/TeamTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,29 +49,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;JUnit.TeamTest.TeamAddGoals.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TeamTest.TeamAddScore.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TeamTest.TeamSummary.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TeamTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "JUnit.GameTest.GameCreation.executor": "Run",
+    "JUnit.GameTest.goalTest.executor": "Run",
+    "JUnit.TeamTest.TeamAddGoals.executor": "Run",
+    "JUnit.TeamTest.TeamAddScore.executor": "Run",
+    "JUnit.TeamTest.TeamSummary.executor": "Run",
+    "JUnit.TeamTest.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="JUnit.TeamTest.TeamAddGoals">
-    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RunManager" selected="JUnit.GameTest.goalTest">
+    <configuration name="GameTest.GameCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scoreboard-app" />
       <extension name="coverage">
         <pattern>
@@ -79,8 +82,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
-      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.TeamTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.GameTest" />
+      <option name="METHOD_NAME" value="GameCreation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.goalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scoreboard-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.GameTest" />
+      <option name="METHOD_NAME" value="goalTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,10 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.goalTest" />
+        <item itemvalue="JUnit.GameTest.GameCreation" />
         <item itemvalue="JUnit.TeamTest.TeamAddGoals" />
         <item itemvalue="JUnit.TeamTest.TeamAddScore" />
         <item itemvalue="JUnit.TeamTest.TeamSummary" />
-        <item itemvalue="JUnit.TeamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +194,7 @@
       <updated>1722341154043</updated>
       <workItem from="1722341155368" duration="2460000" />
       <workItem from="1722344798020" duration="1100000" />
-      <workItem from="1722346419322" duration="6683000" />
+      <workItem from="1722346419322" duration="8992000" />
     </task>
     <task id="LOCAL-00001" summary="Team class added">
       <option name="closed" value="true" />
@@ -215,7 +236,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722351429453</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Game class added">
+      <option name="closed" value="true" />
+      <created>1722354352873</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722354352873</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +271,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Team class added" />
     <MESSAGE value="Team new features to be used in ranking and new tests for team creation and update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Team new features to be used in ranking and new tests for team creation and update" />
+    <MESSAGE value="Game class added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Game class added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
