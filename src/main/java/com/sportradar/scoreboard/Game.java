@@ -36,6 +36,7 @@ public class Game {
 
     public void setHomeGoals(int homeGoals) {
         this.homeGoals = homeGoals;
+        this.homeTeam.addLiveGoals(homeGoals);
     }
 
     public int getAwayGoals() {
@@ -44,6 +45,7 @@ public class Game {
 
     public void setAwayGoals(int awayGoals) {
         this.awayGoals = awayGoals;
+        this.awayTeam.addLiveGoals(awayGoals);
     }
 
     public LocalDateTime getStartTime() {

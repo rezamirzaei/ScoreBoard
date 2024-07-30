@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="Game class added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="Some tests for game has been added">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/TeamTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/TeamTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/GameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +52,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "JUnit.GameTest.GameCreation.executor": "Run",
     "JUnit.GameTest.goalTest.executor": "Run",
+    "JUnit.GameTest.liveGoalTest.executor": "Run",
     "JUnit.TeamTest.TeamAddGoals.executor": "Run",
     "JUnit.TeamTest.TeamAddScore.executor": "Run",
     "JUnit.TeamTest.TeamSummary.executor": "Run",
@@ -72,7 +71,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.GameTest.goalTest">
+  <component name="RunManager" selected="JUnit.GameTest.liveGoalTest">
     <configuration name="GameTest.GameCreation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scoreboard-app" />
       <extension name="coverage">
@@ -100,6 +99,22 @@
       <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
       <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.GameTest" />
       <option name="METHOD_NAME" value="goalTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.liveGoalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scoreboard-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.GameTest" />
+      <option name="METHOD_NAME" value="liveGoalTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,22 +152,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest.TeamSummary" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="scoreboard-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
-      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.TeamTest" />
-      <option name="METHOD_NAME" value="TeamSummary" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="ScoreBoard" />
       <method v="2">
@@ -168,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest.liveGoalTest" />
         <item itemvalue="JUnit.GameTest.goalTest" />
         <item itemvalue="JUnit.GameTest.GameCreation" />
         <item itemvalue="JUnit.TeamTest.TeamAddGoals" />
         <item itemvalue="JUnit.TeamTest.TeamAddScore" />
-        <item itemvalue="JUnit.TeamTest.TeamSummary" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +193,7 @@
       <updated>1722341154043</updated>
       <workItem from="1722341155368" duration="2460000" />
       <workItem from="1722344798020" duration="1100000" />
-      <workItem from="1722346419322" duration="8992000" />
+      <workItem from="1722346419322" duration="9816000" />
     </task>
     <task id="LOCAL-00001" summary="Team class added">
       <option name="closed" value="true" />
@@ -244,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722354352873</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Some tests for game has been added">
+      <option name="closed" value="true" />
+      <created>1722358919798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722358919798</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +279,8 @@
     <MESSAGE value="Team class added" />
     <MESSAGE value="Team new features to be used in ranking and new tests for team creation and update" />
     <MESSAGE value="Game class added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Game class added" />
+    <MESSAGE value="Some tests for game has been added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some tests for game has been added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
