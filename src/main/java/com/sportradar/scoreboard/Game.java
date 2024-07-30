@@ -2,74 +2,32 @@ package com.sportradar.scoreboard;
 
 import java.time.LocalDateTime;
 
+public interface Game{
+     Team getHomeTeam();
 
-public class Game {
+     Team getAwayTeam();
 
-    private final Team homeTeam;
-    private final Team awayTeam;
-    private int homeGoals;
-    private int awayGoals;
-    private final LocalDateTime startTime;// in order to be used in match sorting
-    private LocalDateTime endTime;
-    private boolean isFinished;
+     int getHomeGoals();
 
-    public Game(Team homeTeam, Team awayTeam) {
-        this.homeTeam = homeTeam;
-        this.awayTeam = awayTeam;
-        this.homeGoals = 0;
-        this.awayGoals = 0;
-        this.startTime = LocalDateTime.now();
-        this.isFinished = false;
-    }
+     void setHomeGoals(int homeGoals);
 
-    public Team getHomeTeam() {
-        return homeTeam;
-    }
+     int getAwayGoals();
 
-    public Team getAwayTeam() {
-        return awayTeam;
-    }
+     void setAwayGoals(int awayGoals);
 
-    public int getHomeGoals() {
-        return homeGoals;
-    }
+     LocalDateTime getStartTime();
 
-    public void setHomeGoals(int homeGoals) {
-        this.homeGoals = homeGoals;
-        this.homeTeam.addLiveGoals(homeGoals);
-    }
+     LocalDateTime getEndTime();
 
-    public int getAwayGoals() {
-        return awayGoals;
-    }
+     void setEndTime(LocalDateTime endTime);
 
-    public void setAwayGoals(int awayGoals) {
-        this.awayGoals = awayGoals;
-        this.awayTeam.addLiveGoals(awayGoals);
-    }
+     boolean isFinished();
 
-    public LocalDateTime getStartTime() {
-        return startTime;
-    }
+     void setFinished(boolean finished);
 
-    public LocalDateTime getEndTime() {
-        return endTime;
-    }
+     void addAwayGoals(int addAwayGoals);
 
-    public void setEndTime(LocalDateTime endTime) {
-        this.endTime = endTime;
-    }
-
-    public boolean isFinished() {
-        return isFinished;
-    }
-
-    public void setFinished(boolean finished) {
-        isFinished = finished;
-    }
-
-    @Override
-    public String toString() {
-        return homeTeam.getName() + " " + homeGoals + " - " + awayTeam.getName() + " " + awayGoals;
-    }
+     void addHomeGoals(int addHomeGoals);
+     String getWinner();
+     void finishGame(boolean force);
 }
