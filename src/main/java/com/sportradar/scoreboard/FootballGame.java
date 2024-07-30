@@ -73,8 +73,10 @@ public class FootballGame implements Game{
     public void addAwayGoals(int addAwayGoals) {
         this.awayGoals += addAwayGoals;
         this.awayTeam.addLiveGoals(awayGoals);
+        this.awayTeam.addLiveGoalsAway(awayGoals);
         getWinner();//to update live score
     }
+
     @Override
     public void addHomeGoals(int addHomeGoals) {
         this.homeGoals += addHomeGoals;
