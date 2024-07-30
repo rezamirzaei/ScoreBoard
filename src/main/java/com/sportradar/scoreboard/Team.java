@@ -9,11 +9,11 @@ public class Team {
 
     private int goals;
 
-    private int goalsAway;
+    private int awayGoals;
 
     private int liveGoals; //to be used in live ranking
 
-    private int liveGoalsAway; //to be used in live ranking
+    private int liveAwayGoals; //to be used in live ranking
 
 
 
@@ -23,8 +23,8 @@ public class Team {
         this.liveScore = 0;
         this.goals = 0;
         this.liveGoals = 0;
-        this.goalsAway = 0;
-        this.liveGoalsAway = 0;
+        this.awayGoals = 0;
+        this.liveAwayGoals = 0;
     }
 
     public String getName() {
@@ -65,20 +65,20 @@ public class Team {
         this.liveGoals = liveGoals;
     }
 
-    public void setGoalsAway(int goalsAway) {
-        this.goalsAway = goalsAway;
+    public void setAwayGoals(int goalsAway) {
+        this.awayGoals = goalsAway;
         setLiveGoalsAway(goalsAway);
     }
-    public int getGoalsAway() {
-        return goalsAway;
+    public int getAwayGoals() {
+        return awayGoals;
     }
 
     public void setLiveGoalsAway(int liveGoalsAway) {
-        this.liveGoalsAway = liveGoalsAway;
+        this.liveAwayGoals = liveGoalsAway;
     }
 
-    public int getLiveGoalsAway() {
-        return liveGoalsAway;
+    public int getLiveAwayGoals() {
+        return liveAwayGoals;
     }
 
     public void addGoals(int goals) {
@@ -86,9 +86,9 @@ public class Team {
         this.goals += goals;
     }
 
-    public void addGoalsAway(int goals) {
-        this.liveGoalsAway =this.goalsAway+ goals;
-        this.goalsAway += goalsAway;
+    public void addAwayGoals(int goals) {
+        this.liveAwayGoals =this.awayGoals+ goals;
+        this.awayGoals += awayGoals;
     }
 
     public void addScore(int score) {
@@ -101,7 +101,7 @@ public class Team {
     }
 
     public void addLiveGoalsAway(int goals) {//to be used in update ranking
-        this.liveGoalsAway =this.goalsAway+ goals;
+        this.liveAwayGoals =this.awayGoals+ goals;
     }
 
     public void addLiveScore(int score) {//to be used in update ranking

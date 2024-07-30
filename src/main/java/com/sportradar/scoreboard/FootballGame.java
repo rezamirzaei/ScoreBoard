@@ -114,7 +114,7 @@ public class FootballGame implements Game{
             }
             this.homeTeam.addGoals(getHomeGoals());
             this.awayTeam.addGoals(getAwayGoals());
-            this.awayTeam.addGoalsAway(getAwayGoals());
+            this.awayTeam.addAwayGoals(getAwayGoals());
         }
     }
 
