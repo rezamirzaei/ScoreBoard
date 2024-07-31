@@ -20,6 +20,7 @@ public class FootballGame implements Game{
         this.awayGoals = 0;
         this.startTime = LocalDateTime.now();
         this.isFinished = false;
+        getWinner();
     }
     @Override
     public Team getHomeTeam() {

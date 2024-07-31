@@ -126,4 +126,22 @@ public class ScoreBoard {
         return liveReport;
     }
 
+    public List<String> getRankings() {
+        List<Team> sortedTeams = new ArrayList<>(TeamFactory.getTeams().values());
+        sortedTeams.sort((t1, t2) -> {
+            int scoreComparison = Integer.compare(t2.getLiveScore(), t1.getLiveScore());
+            if (scoreComparison != 0) {
+                return scoreComparison;
+            } else {
+                return Integer.compare(t2.getLiveAwayGoals(), t1.getLiveAwayGoals());
+            }
+        });
+
+        List<String> rankings = new ArrayList<>();
+        for (Team team : sortedTeams) {
+            rankings.add(team.getName() + ": " + team.getLiveScore() + " points, " + team.getLiveGoals() + " goals, " + team.getLiveAwayGoals() + " away goals");
+        }
+        return rankings;
+    }
+
 }
