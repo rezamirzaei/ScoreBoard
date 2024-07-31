@@ -2,7 +2,7 @@ Football World Cup Score Board
 
 Overview
 
-This project is a simple library for managing a live Football World Cup Score Board. The scoreboard supports starting games, finishing games, updating scores, and retrieving a summary of ongoing games sorted by their total scores. The library is implemented using Java and Swing for a basic user interface to manage and display the games.
+This project is a simple library for managing a live Football World Cup Score Board. The scoreboard supports starting games, finishing games, updating scores, retrieving a summary of ongoing games sorted by their total scores, and displaying team rankings. The library is implemented using Java and Swing for a basic user interface to manage and display the games.
 
 Features
 
@@ -11,6 +11,7 @@ Finish a Game: Removes a match from the scoreboard.
 Update Score: Updates the score for a game based on the provided home and away scores.
 Get a Summary of Games: Retrieves a list of ongoing games sorted by total score. Games with the same total score are ordered by the most recently added.
 Project Structure
+Display Team Rankings: Displays team rankings based on live scores and away goals.
 
 com.sportradar.scoreboard: Contains the core classes for managing the scoreboard.
 Team: Represents a football team with properties for name, score, and goals.
