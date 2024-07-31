@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TeamFactoryTest {
     @Test
-    public void CreateTeamTest() {
+    public void createTeamTest() {
         boolean norwayTeamExist = TeamFactory.teamExists("Norway");
         assertEquals(false, norwayTeamExist);
         Team team =TeamFactory.getOrCreateTeam("Norway");

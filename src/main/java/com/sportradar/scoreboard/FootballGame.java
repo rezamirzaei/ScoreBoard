@@ -102,7 +102,8 @@ public class FootballGame implements Game{
     }
     @Override
     public void finishGame(boolean force) {
-        if (force) {
+        if (force&&!isFinished) {
+            setFinished(true);
             this.setEndTime(LocalDateTime.now());
             String winner = getWinner();
             if (winner.equals("Draw")) {
