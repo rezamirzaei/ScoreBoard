@@ -52,4 +52,56 @@ public class ScoreBoard {
         }
     }
 
+    public void updateGoals(String homeTeamName, int homeGoal, String awayTeamName, int awayGoal) {
+        for (Game game : games) {
+            if (game.getHomeTeam().getName().equals(homeTeamName) &&
+                    game.getAwayTeam().getName().equals(awayTeamName) &&
+                    !game.isFinished()) {
+                game.setHomeGoals(homeGoal);
+                game.setAwayGoals(awayGoal);
+                break;
+            }
+        }
+    }
+
+    public void addGoals(String homeTeamName, int homeGoal, String awayTeamName, int awayGoal) {
+        for (Game game : games) {
+            if (game.getHomeTeam().getName().equals(homeTeamName) &&
+                    game.getAwayTeam().getName().equals(awayTeamName) &&
+                    !game.isFinished()) {
+                game.addHomeGoals(homeGoal);
+                game.addAwayGoals(awayGoal);
+                break;
+            }
+        }
+    }
+
+    public List<String> gamesSummary() {
+        List<Game> liveGames = new ArrayList<>();
+        for (Game game : games) {
+            if (!game.isFinished()) {
+                liveGames.add(game);
+            }
+        }
+
+        liveGames.sort(new Comparator<Game>() {
+            @Override
+            public int compare(Game game1, Game game2) {
+                int totalGoalsComparison = Integer.compare(game2.getHomeGoals() + game2.getAwayGoals(), game1.getHomeGoals() + game1.getAwayGoals());
+                if (totalGoalsComparison != 0) {
+                    return totalGoalsComparison;
+                } else {
+                    return games.indexOf(game2) - games.indexOf(game1);
+                }
+            }
+        });
+
+        List<String> liveReport = new ArrayList<>();//to protect games list
+        for (Game game : liveGames) { //to protect games list
+            liveReport.add(game.toString()); //to protect games list
+        } //to protect games list
+
+        return liveReport;
+    }
+
 }

@@ -8,7 +8,7 @@ public class TeamFactoryTest {
     @Test
     public void createTeamTest() {
         boolean norwayTeamExist = TeamFactory.teamExists("Norway");
-        assertEquals(false, norwayTeamExist);
+        assertFalse(norwayTeamExist);
         Team team =TeamFactory.getOrCreateTeam("Norway");
         String summary=team.toString();
         String[] parts = summary.split(" ");

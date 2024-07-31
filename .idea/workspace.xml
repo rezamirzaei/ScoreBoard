@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="Scoreboard class added with test about getting singleton object">
+    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="finish game and start game added in ScoreBoard class with some test, some bugs fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/ScoreBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/ScoreBoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sportradar/scoreboard/ScoreBoardTest.java" afterDir="false" />
@@ -55,15 +55,20 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "JUnit.FootballGameTest.executor": "Run",
     "JUnit.GameFactoryTest.CreateTeamTest.executor": "Run",
+    "JUnit.GameFactoryTest.executor": "Run",
     "JUnit.GameTest.GameCreation.executor": "Run",
     "JUnit.GameTest.goalTest.executor": "Run",
     "JUnit.GameTest.liveGoalTest.executor": "Run",
     "JUnit.GameTest.scoreTest.executor": "Run",
     "JUnit.ScoreBoardTest.SingletonScoreBoardTest.executor": "Run",
     "JUnit.ScoreBoardTest.StartGameTest.executor": "Run",
+    "JUnit.ScoreBoardTest.addGoalsTest.executor": "Run",
+    "JUnit.ScoreBoardTest.executor": "Run",
     "JUnit.ScoreBoardTest.finishGameTest.executor": "Run",
     "JUnit.ScoreBoardTest.singletonScoreBoardTest.executor": "Run",
+    "JUnit.ScoreBoardTest.summaryTest.executor": "Debug",
     "JUnit.ScoreBoardTest.testStartGame.executor": "Run",
+    "JUnit.ScoreBoardTest.updateGoalsTest.executor": "Run",
     "JUnit.TeamFactoryTest.CreateTeamTest.executor": "Run",
     "JUnit.TeamFactoryTest.executor": "Run",
     "JUnit.TeamFactoryTest.existTeamTest.executor": "Run",
@@ -85,8 +90,23 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ScoreBoardTest.finishGameTest">
-    <configuration name="ScoreBoardTest.SingletonScoreBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ScoreBoardTest">
+    <configuration name="GameFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scoreboard-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.GameFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scoreboard-app" />
       <extension name="coverage">
         <pattern>
@@ -96,13 +116,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
       <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.ScoreBoardTest" />
-      <option name="METHOD_NAME" value="SingletonScoreBoardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreBoardTest.summaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="scoreboard-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.ScoreBoardTest" />
+      <option name="METHOD_NAME" value="summaryTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreBoardTest.StartGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scoreboard-app" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +146,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
-      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.ScoreBoardTest" />
-      <option name="METHOD_NAME" value="StartGameTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.TeamFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreBoardTest.finishGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="scoreboard-app" />
       <extension name="coverage">
         <pattern>
@@ -127,41 +161,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
-      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.ScoreBoardTest" />
-      <option name="METHOD_NAME" value="finishGameTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScoreBoardTest.singletonScoreBoardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="scoreboard-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
-      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.ScoreBoardTest" />
-      <option name="METHOD_NAME" value="singletonScoreBoardTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScoreBoardTest.testStartGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="scoreboard-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sportradar.scoreboard.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sportradar.scoreboard" />
-      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.ScoreBoardTest" />
-      <option name="METHOD_NAME" value="testStartGame" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="com.sportradar.scoreboard.TeamTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ScoreBoardTest.finishGameTest" />
-        <item itemvalue="JUnit.ScoreBoardTest.singletonScoreBoardTest" />
-        <item itemvalue="JUnit.ScoreBoardTest.StartGameTest" />
-        <item itemvalue="JUnit.ScoreBoardTest.testStartGame" />
-        <item itemvalue="JUnit.ScoreBoardTest.SingletonScoreBoardTest" />
+        <item itemvalue="JUnit.ScoreBoardTest" />
+        <item itemvalue="JUnit.ScoreBoardTest.summaryTest" />
+        <item itemvalue="JUnit.TeamTest" />
+        <item itemvalue="JUnit.TeamFactoryTest" />
+        <item itemvalue="JUnit.GameFactoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +208,7 @@
       <updated>1722341154043</updated>
       <workItem from="1722341155368" duration="2460000" />
       <workItem from="1722344798020" duration="1100000" />
-      <workItem from="1722346419322" duration="25600000" />
+      <workItem from="1722346419322" duration="29773000" />
     </task>
     <task id="LOCAL-00001" summary="Team class added">
       <option name="closed" value="true" />
@@ -329,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722427010659</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="finish game and start game added in ScoreBoard class with some test, some bugs fixed">
+      <option name="closed" value="true" />
+      <created>1722432237125</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1722432237125</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +375,8 @@
     <MESSAGE value="some bugs fixed" />
     <MESSAGE value="GameFactory class and Test" />
     <MESSAGE value="Scoreboard class added with test about getting singleton object" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scoreboard class added with test about getting singleton object" />
+    <MESSAGE value="finish game and start game added in ScoreBoard class with some test, some bugs fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish game and start game added in ScoreBoard class with some test, some bugs fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
