@@ -76,6 +76,28 @@ public class ScoreBoard {
         }
     }
 
+    public List<Game> getSortedLiveGames() {
+        List<Game> liveGames = new ArrayList<>();
+        for (Game game : games) {
+            if (!game.isFinished()) {
+                liveGames.add(game);
+            }
+        }
+
+        liveGames.sort(new Comparator<Game>() {
+            @Override
+            public int compare(Game game1, Game game2) {
+                int totalGoalsComparison = Integer.compare(game2.getHomeGoals() + game2.getAwayGoals(), game1.getHomeGoals() + game1.getAwayGoals());
+                if (totalGoalsComparison != 0) {
+                    return totalGoalsComparison;
+                } else {
+                    return games.indexOf(game2) - games.indexOf(game1);
+                }
+            }
+        });
+        return liveGames;
+    }
+
     public List<String> gamesSummary() {
         List<Game> liveGames = new ArrayList<>();
         for (Game game : games) {
