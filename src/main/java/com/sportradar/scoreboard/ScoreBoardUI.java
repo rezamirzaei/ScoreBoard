@@ -144,7 +144,7 @@ public class ScoreBoardUI extends JFrame {
 
         JTextField homeGoalsField = new JTextField(5);
         gbc.gridx = 1;
-        panel.add(new JLabel("Home Goals:"), gbc);
+        panel.add(new JLabel("   Home Goals:"), gbc);
         gbc.gridx = 2;
         panel.add(homeGoalsField, gbc);
 

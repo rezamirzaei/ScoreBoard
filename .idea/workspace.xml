@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="ScoreBoardUI added and some bugs fixed">
+    <list default="true" id="1395eda4-4f4c-4f78-b2de-d6d73d2aa40c" name="Changes" comment="ranking is also added to Scoreboard and ScoreBoardUI">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/FootballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/FootballGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/ScoreBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/ScoreBoardUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sportradar/scoreboard/ScoreBoardUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +200,7 @@
       <updated>1722341154043</updated>
       <workItem from="1722341155368" duration="2460000" />
       <workItem from="1722344798020" duration="1100000" />
-      <workItem from="1722346419322" duration="37943000" />
+      <workItem from="1722346419322" duration="38977000" />
     </task>
     <task id="LOCAL-00001" summary="Team class added">
       <option name="closed" value="true" />
@@ -357,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722449447973</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="ranking is also added to Scoreboard and ScoreBoardUI">
+      <option name="closed" value="true" />
+      <created>1722452046140</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1722452046140</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +402,8 @@
     <MESSAGE value="finish game and start game added in ScoreBoard class with some test, some bugs fixed" />
     <MESSAGE value="updadeGoals, addGoals, and summaryGames added in ScoreBoard Class and their functionality were verified by tests, some bugs fixed" />
     <MESSAGE value="ScoreBoardUI added and some bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="ScoreBoardUI added and some bugs fixed" />
+    <MESSAGE value="ranking is also added to Scoreboard and ScoreBoardUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="ranking is also added to Scoreboard and ScoreBoardUI" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
