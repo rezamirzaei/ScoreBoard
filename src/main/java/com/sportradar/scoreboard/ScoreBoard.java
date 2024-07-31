@@ -133,7 +133,12 @@ public class ScoreBoard {
             if (scoreComparison != 0) {
                 return scoreComparison;
             } else {
+                int goalComparison = Integer.compare(t2.getLiveGoals(), t1.getLiveGoals());
+                if (goalComparison != 0) {
+                    return goalComparison;
+                } else {
                 return Integer.compare(t2.getLiveAwayGoals(), t1.getLiveAwayGoals());
+                }
             }
         });
 

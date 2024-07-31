@@ -48,6 +48,7 @@ public class FootballGame implements Game{
     public void setAwayGoals(int awayGoals) {
         this.awayGoals = awayGoals;
         this.awayTeam.addLiveGoals(awayGoals);
+        this.awayTeam.addLiveAwayGoals(awayGoals);
         getWinner();//to update live score
     }
     @Override
@@ -74,7 +75,7 @@ public class FootballGame implements Game{
     public void addAwayGoals(int addAwayGoals) {
         this.awayGoals += addAwayGoals;
         this.awayTeam.addLiveGoals(awayGoals);
-        this.awayTeam.addLiveGoalsAway(awayGoals);
+        this.awayTeam.addLiveAwayGoals(awayGoals);
         getWinner();//to update live score
     }
 

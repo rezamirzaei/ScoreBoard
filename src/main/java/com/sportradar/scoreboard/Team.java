@@ -67,13 +67,13 @@ public class Team {
 
     public void setAwayGoals(int goalsAway) {
         this.awayGoals = goalsAway;
-        setLiveGoalsAway(goalsAway);
+        setLiveAwayGoals(goalsAway);
     }
     public int getAwayGoals() {
         return awayGoals;
     }
 
-    public void setLiveGoalsAway(int liveGoalsAway) {
+    public void setLiveAwayGoals(int liveGoalsAway) {
         this.liveAwayGoals = liveGoalsAway;
     }
 
@@ -100,7 +100,7 @@ public class Team {
         this.liveGoals =this.goals+ goals;
     }
 
-    public void addLiveGoalsAway(int goals) {//to be used in update ranking
+    public void addLiveAwayGoals(int goals) {//to be used in update ranking
         this.liveAwayGoals =this.awayGoals+ goals;
     }
 
